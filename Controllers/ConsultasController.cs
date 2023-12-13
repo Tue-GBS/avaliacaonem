@@ -12,12 +12,12 @@ namespace WebApplication4.Controllers
 {
     public class ConsultasController : Controller
     {
-        private readonly SisMedContext _context;
+        private readonly SguContext _context;
         private readonly IValidator<AdicionarConsultaViewModel> _adicionarConsultaValidator;
         private readonly IValidator<EditarConsultaViewModel> _editarConsultaValidator;
         private const int TAMANHO_PAGINA = 10;
 
-        public ConsultasController(SisMedContext context, IValidator<AdicionarConsultaViewModel> adicionarConsultaValidator, IValidator<EditarConsultaViewModel> editarConsultaValidator)
+        public ConsultasController(SguContext context, IValidator<AdicionarConsultaViewModel> adicionarConsultaValidator, IValidator<EditarConsultaViewModel> editarConsultaValidator)
         {
             _context = context;
             _adicionarConsultaValidator = adicionarConsultaValidator;

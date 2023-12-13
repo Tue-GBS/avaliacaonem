@@ -11,7 +11,7 @@ using WebApplication4.Models.Contexts;
 
 namespace WebApplication4.Migrations
 {
-    [DbContext(typeof(SisMedContext))]
+    [DbContext(typeof(SguContext))]
     [Migration("20220112081310_EstruturaInicial")]
     partial class EstruturaInicial
     {

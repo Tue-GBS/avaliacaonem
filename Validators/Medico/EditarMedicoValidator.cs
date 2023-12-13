@@ -7,7 +7,7 @@ namespace WebApplication4.Validators.Medico
 {
     public class EditarMedicoValidator:AbstractValidator<EditarMedicoViewModel>
     {
-        public EditarMedicoValidator(SisMedContext context)
+        public EditarMedicoValidator(SguContext context)
         {
             RuleFor(x => x.CRM).NotEmpty().WithMessage("Campo obrigatório");
 

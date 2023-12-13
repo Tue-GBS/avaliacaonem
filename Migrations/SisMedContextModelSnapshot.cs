@@ -10,8 +10,8 @@ using WebApplication4.Models.Contexts;
 
 namespace WebApplication4.Migrations
 {
-    [DbContext(typeof(SisMedContext))]
-    partial class SisMedContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(SguContext))]
+    partial class SguContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

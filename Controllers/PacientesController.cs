@@ -10,11 +10,11 @@ namespace WebApplication4.Controllers
 {
     public class PacientesController : Controller
     {
-        private readonly SisMedContext _context;
+        private readonly SguContext _context;
         private readonly IValidator<AdicionarPacienteViewModel> _adicionarPacienteValidator;
         private readonly IValidator<EditarPacienteViewModel> _editarPacienteValidator;
         private const int TAMANHO_PAGINA = 10;
-        public PacientesController(SisMedContext context, IValidator<AdicionarPacienteViewModel> adicionarPacienteValidator, IValidator<EditarPacienteViewModel> editarPacienteValidator)
+        public PacientesController(SguContext context, IValidator<AdicionarPacienteViewModel> adicionarPacienteValidator, IValidator<EditarPacienteViewModel> editarPacienteValidator)
         {
             _context = context;
             _adicionarPacienteValidator = adicionarPacienteValidator;

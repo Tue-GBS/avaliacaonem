@@ -6,7 +6,7 @@ namespace WebApplication4.Validators.Medico
 {
     public class AdicionarMedicoValidator:AbstractValidator<AdicionarMedicoViewModel>
     {
-        public AdicionarMedicoValidator(SisMedContext context)
+        public AdicionarMedicoValidator(SguContext context)
         {
             RuleFor(x => x.CRM).NotEmpty().WithMessage("Campo obrigatório")
                                .Must(crm => !context.Medicos.Any(m => m.CRM == crm)).WithMessage("Este CRM já está cadastrado.");

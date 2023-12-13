@@ -10,11 +10,11 @@ namespace WebApplication4.Controllers
     [Route("Monitoramento")]
     public class MonitoramentoPacienteController : Controller
     {
-        private readonly SisMedContext _context;
+        private readonly SguContext _context;
         private readonly IValidator<AdicionarMonitoramentoViewModel> _adicionarMonitoramentoViewModel;
         private readonly IValidator<EditarMonitoramentoViewModel> _editarMonitoramentoViewModel;
 
-        public MonitoramentoPacienteController(SisMedContext context, IValidator<AdicionarMonitoramentoViewModel> adicionarMonitoramentoViewModel, IValidator<EditarMonitoramentoViewModel> editarMonitoramentoViewModel)
+        public MonitoramentoPacienteController(SguContext context, IValidator<AdicionarMonitoramentoViewModel> adicionarMonitoramentoViewModel, IValidator<EditarMonitoramentoViewModel> editarMonitoramentoViewModel)
         {
             _context = context;
             _adicionarMonitoramentoViewModel = adicionarMonitoramentoViewModel;

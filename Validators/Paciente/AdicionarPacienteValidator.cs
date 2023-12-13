@@ -7,7 +7,7 @@ namespace WebApplication4.Validators.Paciente
 {
     public class AdicionarPacienteValidator:AbstractValidator<AdicionarPacienteViewModel>
     {
-        public AdicionarPacienteValidator(SisMedContext context)
+        public AdicionarPacienteValidator(SguContext context)
         {
             RuleFor(x => x.CPF).NotEmpty().WithMessage("Campo obrigatório")
                                .Must(cpf => Regex.Replace(cpf, "[^0-9]", "").Length == 11).WithMessage("CPF inválido")

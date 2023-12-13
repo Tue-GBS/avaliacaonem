@@ -7,8 +7,8 @@ namespace WebApplication4.Validators.Consulta
 {
     public class EditarConsultaValidator:AbstractValidator<EditarConsultaViewModel>
     {
-        private readonly SisMedContext _context;
-        public EditarConsultaValidator(SisMedContext context)
+        private readonly SguContext _context;
+        public EditarConsultaValidator(SguContext context)
         {
             _context = context;
 
